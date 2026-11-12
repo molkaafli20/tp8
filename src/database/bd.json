@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": "gWOG8FxDFFw",
+      "name": "Stylo",
+      "price": 0.85
+    },
+    {
+      "id": "Zkt5yM_Lpow",
+      "name": "cartable",
+      "price": 126.6
+    },
+    {
+      "id": "lZzF5dLVWUU",
+      "name": "trousse",
+      "price": 15.6
+    },
+    {
+      "id": "AE2WTgiQHyU",
+      "name": "tablier",
+      "price": 33.8
+    }
+  ]
+}
