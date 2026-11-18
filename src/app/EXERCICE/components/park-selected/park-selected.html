@@ -1,0 +1,18 @@
+@if (park(); as p) {
+  <div class="card mx-auto mt-4" style="max-width: 32rem;">
+    <div class="card-header text-center">
+      <h4>{{ p.name | uppercase }}</h4>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li>Date d'ouverture: {{ p.openingDate | date: 'dd MMMM yyyy' }}</li>
+        @if (p.hours) {
+          <li>Horaire : {{ p.hours }}</li>
+        }
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <button class="btn btn-primary" (click)="onBack()">Retour</button>
+    </div>
+  </div>
+}

@@ -1,0 +1,8 @@
+<h1>Liste des parcs d'attraction</h1>
+<ul class="list-group">
+  @for (p of parks(); track p.id) {
+    <li class="list-group-item">
+      <app-park-item [park]="p"></app-park-item>
+    </li>
+  }
+</ul>

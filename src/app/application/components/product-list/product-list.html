@@ -1,16 +1,20 @@
-<h2>Liste des produits</h2>
-<table border="1">
-  <tr>
-    <th>Id</th>
-    <th>Nom</th>
-    <th>Prix</th>
-  </tr>
-  @for (p of products(); track p.id) {
+<h1>Liste des produits</h1>
+<table class="table table-striped">
+  <thead>
     <tr>
-      <td>{{p.id}}</td>
-      <td>{{p.name}}</td>
-      <td>{{p.price}}</td>
+      <th>Id</th>
+      <th>Nom</th>
+      <th>Prix</th>
     </tr>
-  }
+  </thead>
+  <tbody>
+    @for (p of products(); track p.id) {
+      <tr>
+        <td>{{ p.id }}</td>
+        <td>{{ p.name }}</td>
+        <td>{{ p.price }} DT</td>
+      </tr>
+    }
+  </tbody>
 </table>
-<button (click)="onAddProduct()">Ajouter</button>
+<button class="btn btn-primary" (click)="onAddProduct()">Ajouter</button>
